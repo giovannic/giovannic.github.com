@@ -38,6 +38,9 @@ set t_Co=256
 nnoremap ' % 
 vnoremap ' %
 
+"Scons
+au BufNewFile,BufRead SConstruct setlocal ft=python
+
 nnoremap <up> <nop>
 nnoremap <down> <nop>
 nnoremap <left> <nop>
