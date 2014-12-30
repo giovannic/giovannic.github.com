@@ -6,5 +6,9 @@
 // @version     1
 // @grant       none
 // ==/UserScript==
-
-document.getElementById("stream_pagelet").lastChild.innerHTML = "Nah"
+window.addEventListener('hashchange', function() {
+	var stream = document.getElementById("stream_pagelet");
+	if(stream) {
+		stream.lastChild.innerHTML = "Nah"
+	}
+});
