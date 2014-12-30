@@ -6,9 +6,10 @@
 // @version     1
 // @grant       none
 // ==/UserScript==
-window.addEventListener('hashchange', function() {
+
+window.setTimeout(function() {
 	var stream = document.getElementById("stream_pagelet");
 	if(stream) {
 		stream.lastChild.innerHTML = "Nah"
 	}
-});
+}, 500);
