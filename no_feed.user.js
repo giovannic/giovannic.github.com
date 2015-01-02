@@ -7,7 +7,7 @@
 // @grant       none
 // ==/UserScript==
 
-window.setTimeout(function() {
+window.setInterval(function() {
 	var stream = document.getElementById("stream_pagelet");
 	if(stream) {
 		stream.lastChild.innerHTML = "Nah"
