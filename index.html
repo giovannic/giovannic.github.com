@@ -1,47 +1,23 @@
-<!doctype html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>Giovannic.github.com by giovannic</title>
+---
+layout: default
+---
 
-    <link rel="stylesheet" href="stylesheets/styles.css">
-    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-    <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-  </head>
-  <body>
-    <div class="wrapper">
-      <header>
-        <h1>Giovannic.github.com</h1>
-        <p></p>
+{% include intro.html %}
 
-
-        <p class="view"><a href="https://github.com/giovannic">View My GitHub Profile</a></p>
-
-      </header>
-      <section>
-        <h3>Public projects comming soon!</h3>
-          <a href="https://drive.google.com/file/d/0B_79TnoPfYfZUWZ6bW00OUlKNlk/view?usp=sharing">My CV</a>
-      </section>
-      <section>
-        <h3>Machine Learning</h3>
-          Matlab implentations of some structures for classifying facial expressions<br>
-          <a href="https://github.com/giovannic/decisiontrees">Decision trees</a><br>
-          <a href="https://github.com/giovannic/neuralnetworks">Neural networks</a><br>
-          <a href="https://github.com/giovannic/cbr">Case based reasoning</a>
-      </section>
-      <section>
-        <h3>Imperial Hackathon 2013</h3>
-          <a href="https://github.com/giovannic/hack13">Repo</a>
-      </section>
-      <footer>
-        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
-      </footer>
+<section class="post-list">
+    <div class="container">
+        {% for post in paginator.posts %}
+            <div class="post-preview">
+                <span class="post-title alignable pull-left">
+                    <a class="post-link underline" href="{{ post.url | prepend: site.baseurl }}">
+                        {{ post.title }}
+                    </a>
+                </span>
+                <span class="post-time alignable pull-right">
+                    <time>{{ post.date | date: '%B %d, %Y '}}</time>
+                </span>
+                <div style="clear:both"></div>
+            </div>
+        {% endfor %}
     </div>
-    <script src="javascripts/scale.fix.js"></script>
-    
-  </body>
-</html>
+</section>
