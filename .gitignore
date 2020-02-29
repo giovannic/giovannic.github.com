@@ -13,3 +13,6 @@ Gemfile.lock
 package-lock.json
 yarn.lock
 .idea
+
+# Vim
+*.sw*
