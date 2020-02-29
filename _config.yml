@@ -1,91 +1,84 @@
-# User Settings | Edit there as per required
+# Mandatory settings
 
-title: Giovanni Charles
-url: "http://giovannicharles.co.uk"
-baseurl: ""
+blog_theme: dark # Or use dark
+name: Giovanni Charles
+paginate: 25
+url: http://github.io/giovannic
 
-# This will show up at the top of index page
-#Giovanni <span class="faded">Charles</span>
-site_heading: >
-  Giovanni Charles
 
-email: giovanni.charles@gmail.com
-author: Giovanni
-# This description will show up in google search results
-# (for index page) etc.
-description: >
-  Giovanni and his thoughts and dreams
+# Optional settings
 
-# This will what will show against &copy; in the footer
-copyright: giovanni
-# Toggle your short bio, which will displayed on your index page
-# Just toggle it and run jekyll again to see
-intro: true # Tip: Remove the span from site_heading if intro is set to true
-# This will be displayed in your intro
-short_bio: >
-  Hello thur
+about_enabled: true # Change to true if you wish to show an icon in the navigation that redirects to the about page
+discus_identifier: # chalk-1 # Add your Disqus identifier
+ga_analytics: # UA-28631876-6 # Add your GA Tracking Id
+local_fonts: false # Change to true if you wish to use local fonts
+rss_enabled: true # Change to false if not
+scrollappear_enabled: true # Change to false to disable
+tag_nav_enabled: false # Change to true if you wish to show an additional 'tag-list' navigation below the header
+theme_toggle: false # Change to true if you wish to show an icon in the navigation for dynamic theme toggling
+social:
+  dribbble: #nielsenramon # Add your Dribbble handle
+  facebook: # Add your Facebook handle
+  flickr: # Add your Flickr handle
+  github: giovannic # Add your GitHub handle
+  linkedin: # Add your LinkedIn handle
+  twitter: GDCharles # Add your Twitter handle
+  email: # Add your Email address
+  bitcoin: # Add your Bitcoin link or address
+  ethereum: # Add your Ethereum link or address
+  gitlab: # Add your GitLab handle
+  youtube: # Add your Youtube handle
+  twitch: # Add your Twitch handle
+  discord: # Add you Discord server invitation ID
+  tumblr: # Add your Tumblr handle
+  bitbucket: # Add your Bitbucket handle
+  docker: # Add your Docker Hub handle
+  instagram: # Add your Instagram handle
+  keybase: # Add your Keybase handle
+  medium: # Add your Medium handle
+  spotify: # Add your Spotify handle
+  stackoverflow: # Add your Stack Overflow ID number
+  steam: # Add your Steam handle
 
-permalink: /:title.html
 
-# Comments are powered by disqus
-comments: false
+# Important settings (change at own risk)
 
-# keep about_stub roughly 12 words long for best results
-# This will show up at the bottom of each post
-# Note that about_footer should be true if you want
-# to see author information at the bottom of each post
-about_stub: >
-  Hello
-
-about_footer: true
-
-twitter_username: GDCharles
-github_username: giovannic
-linkedin_username: giovannicharles
-facebook_id: giovanni.charles
-
-favicon: true
-favicon_location: "images/favicon.ico"
-
-profile_picture: images/me_round.jpeg
-paginate: 5
-paginate_path: "/page/:num"
-#tracking_id: UA-69243698-7 # GA Tracking ID
-
-# Social Stuff | open graph and twitter cards
-og_image: "images/me_round.jpeg" # This will show in facebook thumbnails
-twitter_image: "http://giovannicharles.co.uk/images/me_round.jpeg" # This will show in twitter cards
-
-####################################
-####################################
-####################################
-### Build Settings | Don't Touch ###
-####################################
-####################################
-####################################
-
-markdown: kramdown
-
-gems:
-    - jekyll-paginate
-
-sass:
-    style: compressed
-    sass_dir: _sass
-
-# Scopes
+assets:
+  plugins:
+    css: { autoprefixer: {}}
+    img: { optim: {}}
+  source_maps: false
+  sources:
+    - _assets/icons
+    - _assets/javascripts
+    - _assets/stylesheets
+    - _assets/yarn
+collections:
+  my_tags:
+    output: true
+    permalink: /tag/:slug/
 defaults:
-    -
-        scope:
-            path:   ""
-            type:   "pages"
-        values:
-            layout: "page"
-    -
-        scope:
-            path:   ""
-            type:   "posts"
-        values:
-            layout: "post"
-
-exclude: [vendor] # For travis ci
+  -
+    scope:
+      path: ""
+      type: my_tags
+    values:
+      layout: articles_by_tag
+exclude:
+  - .travis.yml
+  - bin/*
+  - circle.yml
+  - Gemfile
+  - Gemfile.lock
+  - package.json
+  - package-lock.json
+  - README.md
+  - vendor/
+  - yarn.lock
+plugins:
+  - jekyll-assets
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jemoji
+paginate_path: /posts/page/:num/
+permalink: posts/:slug

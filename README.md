@@ -1,53 +1,97 @@
-# accent
+![](_assets/images/documentation/chalk-intro@2x.png)
 
-#### [Demo & Documentation](http://ankitsultana.me/accent)
+Chalk is a high quality, completely customizable, performant and 100% free blog template for Jekyll.
+
+## Overview
+
+Features:
+  - About page.
+  - Automatic RSS feed.
+  - Automatic sitemap.
+  - Automatic time to read post indicator.
+  - Cross browser support (supports all modern browsers).
+  - Custom 404 page.
+  - Custom code highlighting.
+  - Customizable pagination.
+  - Dark and Light theme.
+  - Easy setup and deploying.
+  - Enlarge images on click.
+  - Filter on tags.
+  - Optional tag navigation.
+  - Frequently updated with new versions.
+  - Many social media links supported.
+  - Media embed for videos.
+  - PageSpeed optimized.
+  - Proper sharing links for posts on Facebook, Twitter and Google Plus.
+  - SEO optimized.
+  - Support for local fonts.
+  - Support for emoji's.
+
+Integrations
+  - [Disqus](https://disqus.com/)
+  - [Google Analytics](https://analytics.google.com/analytics/web/)
+  - [Google Fonts](https://fonts.google.com/)
+  - [SVG Icons](https://icomoon.io/)
+
+Used tools
+  - [Autoprefixer](https://github.com/postcss/autoprefixer)
+  - [Circle CI](https://circleci.com/)
+  - [Html-proofer](https://github.com/gjtorikian/html-proofer)
+  - [Jekyll](https://jekyllrb.com/)
+  - [Jekyll Assets](https://github.com/jekyll/jekyll-assets)
+  - [Jekyll Sitemap](https://github.com/jekyll/jekyll-sitemap)
+  - [HTML5 Boilerplate](https://html5boilerplate.com/) (Influenced by)
+  - [Kickster](https://kickster.nielsenramon.com/)
+  - [Retina.js](https://imulus.github.io/retinajs/)
+  - [STACSS](https://stacss.nielsenramon.com/)
+  - [Travis](https://travis-ci.org/)
+  - [Yarn](https://yarnpkg.com)
+  - [Zooming](https://github.com/kingdido999/zooming/)
+
+## Usage
 
 ### Installation
 
-I'd strongly recommend you to fork [accent](http://github.com/bk2dcradle/accent) and use the "upstream" strategy described on [this page](https://help.github.com/articles/fork-a-repo/) to
-keep accent up to date.
+If you haven't installed the following tools then go ahead and do so (make sure you have [Homebrew](https://brew.sh/) installed):
 
-If you don't want to do that, just clone [accent](http://github.com/bk2dcradle/accent) and use
+    brew install ruby
+    brew install npm
 
-```bash
-bundle exec jekyll serve
-```
-in the root of the accent directory, or, simply [download](https://github.com/bk2dcradle/accent/archive/gh-pages.zip) accent.
+On windows, install Ruby and Node with the installers found here:
 
-### Customization
+  - [Ruby](https://rubyinstaller.org/)
+  - [Node.js](https://nodejs.org/en/download/)
 
-You can edit the variables in `_config.yml` as per your needs. Edit only the variables under the section marked *User Settings*.
+Next setup your environment:
 
-Most of the variables are self explanatory. Notes about few of the non obvious ones:
+    npm run setup
 
-1. You can change the **hex value** of the variable `$accent-color` in `_sass/_style.scss` to any color value that you want. This will change the accent of the theme.
+### Development
 
-2. Set `intro` to `true` to reveal a short bio section on the index page.
+Run Jekyll:
 
-3. Setting `about_footer` to *true* or *false* will turn the `about` section at the bottom of every post to *on* or *off* respectively.
+    npm run local
 
-4. `description` is the summary that will show up in places like facebook thumbnails,
-twitter cards and google search results.
+## Deploy to GitHub Pages
 
+Before you deploy, commit your changes to any working branch except the `gh-pages` one and run the following command:
 
-*Note:* Don't change any variable under *Build Settings*.
+    npm run publish
 
----
+**Important note**: Chalk does not support the standard way of Jekyll hosting on GitHub Pages. You need to deploy your working branch (can be any branch, for xxx.github.io users: use another branch than `master`) with the `npm run publish` command. Reason for this is because Chalk uses Jekyll plugins that aren't supported by GitHub pages. The `npm run publish` command will automatically build the entire project, then push it to the `gh-pages` branch of your repo. The script creates that branch for you so no need to create it yourself. Also, if you are developing a **project site**, you must set the `baseurl` in `_config.yml` to the name of your repository.
 
-### Usage
+You can find more info on how to use the `gh-pages` branch and a custom domain [here](https://help.github.com/articles/quick-start-setting-up-a-custom-domain/).
 
-* To create a new post, simply save the `.markdown` file in the `_posts` directory in the format.
+[View this](https://github.com/nielsenramon/kickster#automated-deployment-with-circle-ci) for more info about automated deployment with Circle CI.
 
-```
-year-month-day-name-of-the-file.markdown
-```
+## License
 
-* For Syntax highlighting, accent uses *Rouge* which is the default highlighter in Jekyll 3 and above. If you don't know how to highlight a code block, [refer](http://jekyllrb.com/docs/templates/).
+MIT License
 
-* To set up Google Analytics tracking id, just set the `tracking_id` variable in `_config.yml`.
+## Contributing
 
----
-
-### License
-
-[MIT](https://github.com/bk2dcradle/accent/blob/gh-pages/LICENSE). Copyright &copy; [Ankit Sultana](http://twitter.com/AnkitSultana)
+1. Fork it (https://github.com/[my-github-username]/chalk/fork)
+2. Create your feature branch (`git checkout -b my-new-feature`)
+3. Commit your changes (`git commit -am 'Add some feature'`)
+4. Push to the branch (`git push origin my-new-feature`)
+5. Create a new Pull Request
