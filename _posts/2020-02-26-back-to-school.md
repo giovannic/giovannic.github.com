@@ -23,7 +23,7 @@ grads and researchers thought it was better to fix my delusions than to help.
 
 One student was super nice.
 
-In October, I went to visit 2 supervisors who treated me like dirt and/or
+In October, I went to visit two supervisors who treated me like dirt and/or
 pummelled me into the ground with condescension.
 
 My first rejection came in December, which I took quite personally.
