@@ -1,42 +1,22 @@
 ---
 layout: post
 title: "Good times at Mendelian"
-description: "I was the Chief Technology Officer at Mendelian for a while"
-tags: [CTO, gentics, EHR, rare disease]
+description: "Looking back a bit teary eyed"
+tags: [computing, health]
 ---
 
-Some kind of intro about why I'm writing this and what you can take from it
+I've stepped back from Mendelian. At this stage, I prefer to do my own thing
+and watch (maybe prod?) from the sidelines.
 
-## What Mendelian does as a company
+It was jokes and I learned loads. That's what I want to write about.
 
-Mendelian speeds up rare disease diagnosis, using tech.
+### What even is Mendelian?
 
-Now, this seems strange to a lot of people. But, trust me, it's the best way to
-describe what happens in that office. Here are a few of the follow up questions
-I've heard:
+Mendelian speeds up rare disease diagnosis, using software.
 
-### What's the product/app/service?
+### But what's the product/app/service?
 
-We've made so many things over the years, see my [highlights](#highlights).
-Often concurrently. It's a bit overwhelming to list them all out. The one
-thing that brings them together is that they speed up rare disease diagnosis.
-
-Here's another answer, at the time of writing they provide a search engine, a
-genetic interpretation service and a referral suggestion service.
-
-### How do they make money?
-
-So there's a lot of value in rare disease diagnosis. Hospitals have an interest
-in providing good healthcare, pharmaceuticals have an interest in selling drugs,
-and healthcare providers have an interest in ...
-[QALY](https://en.wikipedia.org/wiki/Quality-adjusted_life_year)s (ffs).
-
-Mendelian talk to all the big players for each service and there seems to be
-potential for big wins.
-
-But they are still a start up. Like most other startups, they make money from
-time to time but they need trials to pass and negotiations to finish before
-they know how they'll _make money_.
+They make a bunch of things. You'll see [later](#highlights).
 
 ### Why are they wasting their time on rare disease?
 
@@ -49,31 +29,34 @@ So if doctors could diagnose them...
 
 ## <a name="highlights"></a> Some of my highlights
 
-Rare disease diagnosis is so big and messed up that it literally kept me jacked
-for years. It's shamefully sadistic, I know. But that didn't stop us trying to
-tackle we every problem a doctor came to us with. I had lots of fun doing it.
+Rare disease diagnosis is so big and messed up that it kept me jacked
+for years. It's shamefully sadistic, I know. We gave most of the problems a go
+and I had lots of fun doing it.
+
 Here are some of my favourites:
 
-### When world experts :heart:'d our rare disease search engine
+### Doctors finally :heart:'d our rare disease search engine
 
 Shortly after joining, I prototyped a search engine for specialist clinicians.
-These doctors see the some of the most difficult patients, who have been
-undiagnosed and bouncing around the healthcare system for years.
+These doctors see the some of the most challenging patients. Everyone and their
+gran has tried and failed to diagnose them and they've been bouncing around
+the healthcare system for years.
 
 In 2016 I went to visit some specialists at St. George's Hospital in Tooting
-to show them our work. They stopped short of laughing me out of the room. I
-don't think they had ever seen something like that before, a computer
-scientist from a private company trying to help.
+to show them the search.
 
-They seemed confused. I was confused.
+...They stopped short of laughing me out of the room. They kinda liked the
+application and admitted that there were some interesting results, but treated
+me with the utmost suspicion. I don't think they had ever seen a computer
+scientist from a private company try to help them. 
 
-Anyway, we went away and made it better. Got some more medical input and then
-tested it in Spanish and American hospitals.
-
-Everyone loved it! They told us about the diagnoses they'd found through it.
-They wanted be our advisors. Pharmas paid to slap their logos on it.
+Anyway we went away, got some more medical input and made it better. Then we
+tested it in some Spanish and American hospitals to make sure we weren't crazy.
 
 Then we released it, did some SEO and then thousands of doctors started using it.
+
+Doctors started telling us about the diagnoses they'd found through it. They
+wanted be our advisors. Pharmas paid to slap their logos on it.
 
 That felt good.
 
@@ -86,26 +69,31 @@ Before long, a research institution called RDConnect reached out for a
 collaboration. We ended up adapting our search engine to help their researchers
 analyse genetic sequences. Turns out this is a good idea.
 
-We were given access to the 100k Genome Project, just the biggest deal in
-genomics at the time of writing, to play with.
+We were given access to the 100k Genome Project to test it out on. That dataset
+is only the biggest deal in genomics at the time of writing.
 
 That felt good.
 
 ### Working with the NHS 👩‍⚕️
 
-Like any other Brit, I have this insane love for the crumbling, bureaucratic,
-(perhaps insecure?) NHS. It's free, everyone is heroically optimistic and if you
-want to have any health impact in the UK it kinda has to be through them.
+Like any other Brit, I have this insane love for the NHS. It's crumbling but
+it's free, everyone is heroically optimistic and if you want to have any
+impact in the UK it kinda has to be through them.
 
 But only massive quangos work with the NHS, and it's almost a prerequisite that
 the work has to be extremely dull. So when our pokey little group of medical
 researchers and computer scientists were introduced to senior NHS staff, I was
 in shock.
 
-Not only that, it was to work on Electronic Health Records (EHR). EHR research
-is :fire::fire::fire:. Until recently they've been the most expensive,
-overrated, glorified accounting software known to man. But researchers, and now
-Mendelian, are making them actually benefit patients.
+Not only that, we got to work on Electronic Health Record (EHR) systems.
+EHR research is :fire::fire::fire:. Until recently they've been the most
+expensive, overrated, accounting software known to man. But
+researchers, and now Mendelian, are making them actually benefit patients.
+
+We started trialling a system to suggest referrals for suspected rare
+disease patients. The urgency on the faces of specialists when they see our
+reports is incredible. GPs and patient advocacy groups have shown us a lot of
+love too.
 
 That felt good.
 
@@ -118,19 +106,91 @@ on the academic career ladder.
 
 I know this is not the same. But it felt good when I read it.
 
-I pitched that research project at a workshop and all the researchers went crazy.
-It was oversubscribed and the organiser had to rebalance the workshop groups.
+I pitched a research project at a workshop and all the researchers went crazy.
+It was oversubscribed and the organiser had to rebalance the work groups.
 
 We now have an incredible group of researchers and I'm going to try my best to
 get some great work published.
 
+## My learnings
+
+It changed me. I've been a CTO before, but not in health.
+
+### Pitching
+
+There are so many different backgrounds to cater for and it gets political very
+quickly.
+
+When you pitch at a tech event, tech people will ask you what stack you use and
+investors will ask you how much money you're making. Everyone will clap and you
+can go home.
+
+When you pitch at a health event, (takes deep breath)
+
+ * doctors will ask you about the status of your randomised control trial,
+ * health researchers will ask you about p-values (or whatever their metric of
+   the month is, whether it is applicable or not),
+ * policy makers will ask you to reframe everything you said in terms of
+   patient outcomes,
+ * economists will ask you about QALYs,
+ * ethicists will ask you about your GDPR processing conditions,
+ * pharmaceutical representatives will ask you to live code their work for them
+   on the spot,
+ * patients will slap on the praise before asking when you are going to replace
+   doctors, and
+ * NHS staff will slap on the praise before sending you a calendar invite for
+   three months in the future.
+
+then the solitary tech guy will ask you about your stack and a clueless
+investor will ask you about money. Everyone will clap and there will be too many
+follow up questions to ever go home.
+
+I personally like this. People seem to recognise the importance of what you are
+doing care about the effect you have on the ecosystem. But not every computer
+scientist may be up to that.
+
+### Security & Documentation
+
+I was broken in the hard way...
+
+> "This session timeout is too long". - Pen tester
+
+> "You can't tell the user _why_ their authentication failed". - Pen tester
+
+> "We don't like your rate limiting policy for this endpoint". - Pen tester
+
+I had spent weeks mediating a series of increasingly tedious arguments between
+an external pen tester and our UX designer. Predictably afterwards, we had a
+torrent of confused and locked out users to appease.
+
+There's no winning. But I now fall on the side of the security bureaucrats:
+
+Yes, it stifles creativity.
+
+Yes, the policies make for stupid and cumbersome software.
+
+Yes, it is redundant work.
+
+But all the gatekeepers are paranoid and I don't see any way around it.
+
+It's no wonder that most health software is rubbish.
+
+But if you're clever about it, you can be less uncreative, oafish and
+inefficient than everyone else. And with this in mind, we took great pride in
+security. Codify your infrastructure, set up your internal networking and
+centralised logging early, document it once and adapt it for the millions of
+documentation requests you are going to get.
+
+The annoying part is that if you follow standard practice, you are doing more
+than most. After 6 months of begging for data, the data controller with the 15
+ISO and NCSC certifications will email your credentials in plain text, CC'ing
+almost every employee from both companies. When you try to download the data
+you'll have to placate `sftp` since it'll scream at how out of date their
+server's ciphers and protocols are.
+
+This is getting better.
+
 ## Moving on
-
-> There are still faint glimmers of civilization left in this barbaric
-> slaughterhouse that was once known as humanity... He was one of them. What
-> more is there to say? - Mr Moustafa
-
-I'm guessing that was Stefan Zweig.
 
 At the age of 23, I was in a miserable place. My first company had whimpered out
 of existence and the world made no sense to me. And I was struggling to see how
@@ -144,16 +204,8 @@ about the future.
 As is customary, the founders offered that I work for pennies in a freezing
 basement. An offer that I simply couldn't refuse.
 
-[4 years later and this is no longer true. I'm not in a basement and my bubble
-is civilised]
-
-Almost 4 years later, an eerie comfort crept up on me. Comfortable because all
-of a sudden you realise that you _know_ what you are doing. And you feel at home
-surrounded by other "social impact" startups and the public services. Eerie
-because I'd stopped learning. And from my safe little perch, I could only watch
-all of the exciting opportunities go by while I plugged away at Rare Disease.
-
-I became restless and left. Mendelian will no doubt have countless more stories.
-I'll try to remain a part of them. And I'll try to make others of my own.
+4 years later and my work there is done. I'm pleased with where it is and where
+it has put me (in a happy bubble of "social impact" startups and government
+organisations). I hope my next stories are as good.
 
 [^1]: Figures from cancerresearchuk.org and raredisease.org.uk (accessed 29th October 2018), you can extrapolate that in 2013 there were 2.2m live cancer patients and 3.7m with rare disease.
