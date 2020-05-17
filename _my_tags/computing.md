@@ -1,4 +1,0 @@
----
-slug: computing
-name: Computing
----

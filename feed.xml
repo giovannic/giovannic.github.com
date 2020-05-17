@@ -1,20 +1,50 @@
----
----
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="https://www.w3.org/2005/Atom" xmlns:dc="https://purl.org/dc/elements/1.1/">
   <channel>
-    <title>{{ site.name | xml_escape }}</title>
-    <description>{% if site.description %}{{ site.description | xml_escape }}{% endif %}</description>
-    <link>{{ site.url }}</link>
-    <atom:link href="{{ page.path | absolute_url }}" rel="self" type="application/rss+xml" />
-    {% for post in site.posts limit:10 %}
+    <title>Giovanni Charles</title>
+    <description></description>
+    <link>http://github.io/giovannic</link>
+    <atom:link href="http://github.io/giovannic/feed.xml" rel="self" type="application/rss+xml" />
+    
       <item>
-        <title>{{ post.title | xml_escape }}</title>
-        <description>{{ post.description | xml_escape }}</description>
-        <pubDate>{{ post.date | date_to_rfc822 }}</pubDate>
-        <link>{{ post.url | absolute_url }}</link>
-        <guid isPermaLink="true">{{ post.url | absolute_url }}</guid>
+        <title>Openness and interventionism</title>
+        <description>PST #31</description>
+        <pubDate>Sun, 17 May 2020 00:00:00 -0500</pubDate>
+        <link>http://github.io/giovannic/posts/pst-31</link>
+        <guid isPermaLink="true">http://github.io/giovannic/posts/pst-31</guid>
       </item>
-    {% endfor %}
+    
+      <item>
+        <title>Dangerous ideas and the new world order</title>
+        <description>PST #30</description>
+        <pubDate>Sat, 18 Apr 2020 00:00:00 -0500</pubDate>
+        <link>http://github.io/giovannic/posts/pst-30</link>
+        <guid isPermaLink="true">http://github.io/giovannic/posts/pst-30</guid>
+      </item>
+    
+      <item>
+        <title>Suffering, Dominic Cummings and Panpsychism</title>
+        <description>PST #29</description>
+        <pubDate>Sat, 07 Mar 2020 00:00:00 -0600</pubDate>
+        <link>http://github.io/giovannic/posts/pst-29</link>
+        <guid isPermaLink="true">http://github.io/giovannic/posts/pst-29</guid>
+      </item>
+    
+      <item>
+        <title>I am delighted to inform you...</title>
+        <description>God I've been waiting so long for that</description>
+        <pubDate>Wed, 26 Feb 2020 00:00:00 -0600</pubDate>
+        <link>http://github.io/giovannic/posts/back-to-school</link>
+        <guid isPermaLink="true">http://github.io/giovannic/posts/back-to-school</guid>
+      </item>
+    
+      <item>
+        <title>Good times at Mendelian</title>
+        <description>Looking back a bit teary eyed</description>
+        <pubDate>Mon, 24 Feb 2020 00:00:00 -0600</pubDate>
+        <link>http://github.io/giovannic/posts/what-i-did-at-mendelian</link>
+        <guid isPermaLink="true">http://github.io/giovannic/posts/what-i-did-at-mendelian</guid>
+      </item>
+    
   </channel>
 </rss>
