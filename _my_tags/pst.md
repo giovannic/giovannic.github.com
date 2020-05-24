@@ -1,4 +1,0 @@
----
-slug: pst
-name: PST
----
