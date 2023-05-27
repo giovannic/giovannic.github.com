@@ -5,7 +5,7 @@ paginate = 5
 
 [params]
   # dir name of your blog content (default is `content/posts`)
-  contentTypeName = "posts"
+  #contentTypeName = "content"
 
   # ["orange", "blue", "red", "green", "pink"]
   themeColor = "orange"
@@ -33,31 +33,42 @@ paginate = 5
   # set Twitter handles for Twitter cards
   # see https://developer.twitter.com/en/docs/tweets/optimize-with-cards/guides/getting-started#card-and-content-attribution
   # do not include @
-  creator = ""
+  creator = "@GDCharles"
   site = ""
 
 [languages]
   [languages.en]
     languageName = "English"
     title = "Giovanni Charles"
+    copyright = ""
+    [languages.en.params]
     subtitle = ""
     owner = ""
     keywords = ""
-    copyright = ""
-    menuMore = "Show more"
     readMore = "Read more"
+    menuMore = "Show more"
     readOtherPosts = "Read other posts"
 
     [languages.en.params.logo]
       logoText = "Giovanni Charles"
       logoHomeLink = "/"
 
-    [languages.en.menu]
+    #[languages.en.menu]
+      #[[languages.en.menu.main]]
+        #identifier = "about"
+        #name = "about"
+        #url = "/posts/about"
+
+      #[[languages.en.menu.main]]
+        #identifier = "posts"
+        #name = "posts"
+        #url = "/posts"
+
       [[languages.en.menu.main]]
-        identifier = "about"
-        name = "About"
-        url = "/"
+        identifier = "life"
+        name = "Life"
+        url = "/posts/life"
       [[languages.en.menu.main]]
-        identifier = "posts"
-        name = "Posts"
-        url = "/posts"
+        identifier = "pst"
+        name = "PST"
+        url = "/posts/pst"
