@@ -11,7 +11,7 @@ paginate = 5
   themeColor = "orange"
 
   # if you set this to 0, only submenu trigger will be visible
-  showMenuItems = 2
+  showMenuItems = 0
 
   # show selector to switch language
   showLanguageSelector = false
@@ -64,11 +64,11 @@ paginate = 5
         #name = "posts"
         #url = "/posts"
 
-      [[languages.en.menu.main]]
-        identifier = "life"
-        name = "Life"
-        url = "/posts/life"
-      [[languages.en.menu.main]]
-        identifier = "pst"
-        name = "PST"
-        url = "/posts/pst"
+      #[[languages.en.menu.main]]
+        #identifier = "life"
+        #name = "Life"
+        #url = "/posts/life"
+      #[[languages.en.menu.main]]
+        #identifier = "pst"
+        #name = "PST"
+        #url = "/posts/pst"
