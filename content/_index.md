@@ -2,35 +2,23 @@
 title: About me
 ---
 
-_Senior Research Software Engineer_\
-_PhD Student_
+_Senior Research Software Engineer_
 
-I work on math models of disease transmission and ML-based surrogates for
-inference and optimisation, my areas of interest include: time-series
-prediction, transformers for time-series, Approximate Bayesian Inference,
-differential equations, differentiable agent based models, optimal control and
-JAX development.
+I develop Agent Based Models, scalable Bayesian inference, and neural network based surrogates for inference and optimisation.
 
-I also work with global health researchers in the Department for Infectious
-Disease Epidemiology to inform malaria elimination strategies - how, where and
-when should resources be invested to most effectively reduce the global case
-burden and eventually eradicate Plasmodium parasites, and implement spatial and
-temporal disease models.
+My research areas of interest include: the Transformer architecutre, differential equations, continuous flow models, and JAX development.
 
 # Projects
 
-* Differentiable ABMs - Researching
-* Global Health Policy Optimisation - Interested
-* [Machine Learning and Global Health Workshop](https://mlgh-2023.netlify.app/)
-  (ICLR 2023) - Co-organiser and Fundraiser
+ * Tokenised Flow Matching for Hierarchical Simulation Based Inference (Pre-print soon)
+ * Linear-time Spatial Modelling (In progress)
+ * [Machine Learning and Global Health Workshop](https://mlgh-2023.netlify.app/)
+   (ICLR 2023) - Co-organiser and Fundraiser
 
 # Software
 
  * [individual](https://github.com/mrc-ide/individual) - an R framework for individual (or agent) based modelling
  * [malariasimulation](https://github.com/mrc-ide/malariasimulation) - an agent based model of malaria transmission
- * [fastms](https://github.com/giovannic/fastms) - A package, written in tensorflow, for training and testing seq2seq surrogates of the above malaria model
- * mox (WIP) - A JAX library for developing seq2seq surrogates
- * dux (WIP) - A JAX library for differentiating stochastic models
 
 # Publications
 
