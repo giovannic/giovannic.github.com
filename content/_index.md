@@ -17,7 +17,7 @@ My research areas of interest include: the Transformer architecutre, differentia
 
 # Software
 
- * [individual](https://github.com/mrc-ide/individual) - an R framework for individual (or agent) based modelling
+ * [individual](https://github.com/mrc-ide/individual) - C++ library for agent based modelling in R
  * [malariasimulation](https://github.com/mrc-ide/malariasimulation) - an agent based model of malaria transmission
 
 # Publications
